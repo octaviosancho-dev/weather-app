@@ -84,12 +84,9 @@ function mostrarClima(datos) {
         <div class="card text-start w-75 h-50 border-light text-secondary m-auto mt-5 shadow-lg d-flex flex-column flex-wrap divCards">
             <div class="card-header text-dark d-flex flex-row align-items-center justify-content-between">
                 <h2 class="card-title p-3">${name}</h2>
-                <div class="">
-                    <i class="fas fa-cloud-sun fa-4x iconClima"></i>
-                </div>
             </div>
             <div class="card-body">
-                <p>Temperatura Actual:<strong> ${centigrados} &#8451;</strong></p>
+                <p>Temp. Actual:<strong> ${centigrados} &#8451;</strong></p>
                 <p>Máxima:<strong> ${max} &#8451;</strong></p>
                 <p>Mínima:<strong> ${min} &#8451;</strong></p>
             </div>

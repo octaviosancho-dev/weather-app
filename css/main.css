@@ -17,6 +17,9 @@ body {
     rgb(106, 180, 223) 100%
   );
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-width: 370px;
+  height: 100%;
 }
 .grid-container {
   display: grid;
@@ -311,15 +314,16 @@ h6 {
   align-items: center;
   perspective: 1000px;
 }
+.footerMessage {
+  display: none;
+}
 .cardSocialmedia {
   position: relative;
   width: 5rem;
   height: 5rem;
   margin: 0.5rem;
-  text-align: center;
-  line-height: 8rem;
   color: #ecf0f1;
-  transform-style: preserve-3d;
+  margin-bottom: 0;
 }
 .face {
   display: block;
@@ -375,3 +379,191 @@ h6 {
   color: #383838;
 }
 /******************/
+
+/* Responsive */
+
+@media only screen and (max-width: 1300px) {
+  .grid-container {
+    display: flex;
+    flex-flow: row wrap;
+    height: fit-content;
+  }
+  
+  .item1 {
+    width: 100%;
+    background-color: #85b4d8;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    justify-items: center;
+    color: rgb(59, 59, 59);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(41, 41, 41, 0.575) 0.5px 0px 10px;
+    transition: 1s;
+  }
+  .item1 div div a {
+    display: flex;
+    justify-content: center;
+    flex-direction: row nowrap;
+  }
+  .item1 div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .item2 {
+    width: 100%;
+    background-color: #b5d7f1;
+    border-radius: 5px;
+    box-shadow: rgba(41, 41, 41, 0.575) 0.5px 0px 10px;
+    transition: 1s;
+  }
+
+  .item3 {
+    width: 100%;
+    background-color: #b5d7f1;
+    border-radius: 5px;
+    box-shadow: rgba(41, 41, 41, 0.575) 0.5px 0px 10px;
+    transition: 1s;
+  }
+
+  .footerContainer div {
+    margin-bottom: 20px;
+  }
+
+  .footerContainer div h6 {
+    display: none;
+  }
+
+  .imgFooter {
+    display: none;
+  }
+  .footerMessage {
+    display: none;
+  }
+  .containerSocialmedia {
+    margin: auto;
+  }
+
+  /*clases darkmode */
+.darkMode1 {
+  background-color: #383838;
+  color: rgb(214, 236, 245);
+}
+
+
+.darkMode2 {
+  background-color: rgb(39, 39, 39);
+}
+.darkMode3 {
+  background-color: rgb(39, 39, 39);
+}
+
+.footerDm img {
+  color: #383838;
+}
+.footerDm h5 {
+  color: #383838;
+}
+}
+
+@media only screen and (max-width: 400px) {
+  .logoChange a img {
+    width: 200px;
+  }
+  .selectCiudad {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    font-size: small;
+    margin: 15px 0px;
+  }
+  .selectCiudad label {
+    margin: 10px 0px;
+  }
+  .selectCiudad input {
+    width: 90%;
+    height: 30px;
+    border: none;
+    border-bottom: solid rgb(104, 104, 104) 2px;
+    border-radius: 3px 3px 0 0;
+    color: rgb(59, 59, 59);
+    background-color: rgba(255, 255, 255, 0.822);
+    transition: 0.2s;
+    padding-left: 10px;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  .selectCiudad select {
+    width: 90%;
+    height: 30px;
+    border: none;
+    border-bottom: solid rgb(104, 104, 104) 2px;
+    border-radius: 3px 3px 0 0;
+    color: rgb(59, 59, 59);
+    background-color: rgba(255, 255, 255, 0.822);
+    transition: 0.2s;
+    padding-left: 9px;
+    margin: 0;
+  }
+  .selectCiudad select:hover {
+    cursor: pointer;
+  }
+  .selectCiudad input:nth-child(4) {
+    color: rgb(104, 104, 104);
+    background-color: #98c3e4;
+    border-radius: 3px;
+    border: 2px rgb(104, 104, 104) solid;
+    margin-top: 40px;
+  }
+  .selectCiudad input:nth-child(4):hover {
+    color: rgb(255, 255, 255);
+    background-color: #5890bb;
+    border: 2px white solid;
+  }
+  .mensajeError {
+    font-size: small;
+    color: rgb(129, 33, 33);
+    background-color: rgb(216, 181, 181);
+    padding: 10px;
+    margin: auto;
+    border: 1px solid rgb(129, 33, 33);
+    border-radius: 3px;
+  }
+  .footerMessage {
+    text-align: justify;
+    font-size: medium;
+  }
+  .cardSocialmedia {
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    margin: 0.2rem;
+    color: #ecf0f1;
+    margin-bottom: 0;
+  }
+  
+  /*clases darkmode */
+.darkMode1 {
+  background-color: #383838;
+  color: rgb(214, 236, 245);
+}
+
+
+.darkMode2 {
+  background-color: rgb(39, 39, 39);
+}
+.darkMode3 {
+  background-color: rgb(39, 39, 39);
+}
+
+.footerDm img {
+  color: #383838;
+}
+.footerDm h5 {
+  color: #383838;
+}
+}
+
