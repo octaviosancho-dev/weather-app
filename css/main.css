@@ -49,6 +49,7 @@ body {
   border-radius: 5px;
   box-shadow: rgba(41, 41, 41, 0.575) 0.5px 0px 10px;
   transition: 1s;
+  min-height: 460px;
 }
 .item1 div div a {
   display: flex;
